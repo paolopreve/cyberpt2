@@ -1,0 +1,5 @@
+1. in gdb: shell cyclic 200
+2. immetto in input
+3. ottengo overflow
+4. controllo stack con: print (char *)$rsp
+5. shell cyclic -l + prime 4 lettere uscite dal comando sopra
