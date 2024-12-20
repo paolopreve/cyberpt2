@@ -1,0 +1,15 @@
+aprire il file con ida
+fare fn+f5 per decompilare la funzione main e vedere il codice
+se non funziona andare sul sito dogbolt
+fare patching
+edit in alto a sinistra
+se possibile (non vietato dalla description e esiste una funzione che ti stampa in qualche modo la flag)
+andare su patch program
+assemble per modificare la stringa
+change byte per modificare i byte
+casi utili
+selezionare una funzione call al interno del main fare assemble e scrivere call la funzione che ti stampa la flag
+per rimuovere una riga non fare assemble e cambiare la call in nop
+fai patch bytes e modifica i primi 5 coppia di numeri/letttere solitamente EE 75 FF FF FF e sostituiscili con 90 90 90 90 90
+se in un file c'è un esercizio in cui richiama un random per rimuovere il random
+

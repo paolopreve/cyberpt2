@@ -1,0 +1,21 @@
+lavorare con gdb
+---------------------------------------------------------------------------------------------------------------------------------------------
+chmod -R +x ./ (da i permessi a tutti i file nella cartella di essere eseguiti)
+---------------------------------------------------------------------------------------------------------------------------------------------
+gdb ./nome file (esegue il file con gdb)
+---------------------------------------------------------------------------------------------------------------------------------------------
+disas nome funzione (disas ti fa vedere il codice assembly della funzione che hai scritto [solitamente il main])
+---------------------------------------------------------------------------------------------------------------------------------------------
+b* indirizzo di memoria (aggiunge un breakpoint nel punto in cui vuoi che si fermi il programma)
+---------------------------------------------------------------------------------------------------------------------------------------------
+run (fa partire il programma)
+---------------------------------------------------------------------------------------------------------------------------------------------
+info variables parola chiave (cerca le variabili che contengono la parola chiave [solitamente flag])
+---------------------------------------------------------------------------------------------------------------------------------------------
+info registers (da usare quando ci sono funzione che generano un passaggio randomico)
+piu precisamente bisogna aggiungere un b* in uno dei punti della funzione che genera il numero e dopo fare info registers e capire quale ha il valore che ti interessa
+---------------------------------------------------------------------------------------------------------------------------------------------
+continue (per riprendere il programma dopo che si ha trovato la informazione necessaria)
+---------------------------------------------------------------------------------------------------------------------------------------------
+si saltare all'istruzione successiva
+---------------------------------------------------------------------------------------------------------------------------------------------
