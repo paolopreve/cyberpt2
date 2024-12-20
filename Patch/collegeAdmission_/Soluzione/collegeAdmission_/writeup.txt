@@ -1,0 +1,4 @@
+1. Togliere controllo gdb in funzione think mettendo nop alla call
+2. avviare con gdb e mettere break dopo che è stato calcolato valore rand
+   ad es dopo istruzione mov     [rbp+var_14], eax
+3. vedere da gdb valore di registro rax

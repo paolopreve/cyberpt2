@@ -1,0 +1,3 @@
+-rimuovere controllo ptrace() in funzione is_someone_cheating riempiendo di nop
+- mettere break dopo bridge generate e leggere ponte creato
+- inserire input
